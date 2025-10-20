@@ -12,7 +12,7 @@
 
 ***C= 227 W=721 H=1440***
 
-![image-20251019213829809](.\picture\image-20251019213829809.png)
+![image-20251019213829809](picture/image-20251019213829809.png)
 
 
 
@@ -30,7 +30,7 @@ And the four surface variables are 2-meter temperature (t2m), 10-meter u wind co
 
 0.25×0.25
 
-![image-20251019213119591](.\picture\image-20251019213119591.png)
+![image-20251019213119591](picture/image-20251019213119591.png)
 
 
 
@@ -58,7 +58,7 @@ And the four surface variables are 2-meter temperature (t2m), 10-meter u wind co
 
 **observation data**: Fengyun-4B satellite.
 
-![image-20251019150446209](.\picture\image-20251019150446209.png)
+![image-20251019150446209](picture/image-20251019150446209.png)
 
 ## （FuXi Weather）A data-to-forecast machine learning system for global weather
 

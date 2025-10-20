@@ -28,7 +28,7 @@ FuXi: a cascade machine learning forecasting system for 15-day global weather fo
 
 The loss function used is the latitude-weighted L1 loss, which is defined as follows:
 
-![image-20251011193355117](.\picture\image-20251011193355117.png)
+![image-20251011193355117](picture/image-20251011193355117.png)
 
 where C, H, and W are the number of channels and the number of grid points in latitude and longitude direction, respectively. c, i, and j are the indices for variables, latitude and longitude coordinates, respectively. ^ Xtþ1 c; i; j and Xtþ1 c; i; j are predicted and ground truth for some variable and locations (latitude and longitude coordinates) at time step of t+1. ai represents the weight at latitude i and the value of ai decreases as latitude increases. The L1 loss is averaged over all the grid points and variables.
 
@@ -36,17 +36,17 @@ where C, H, and W are the number of channels and the number of grid points in la
 
 two metrics to assess  forecast performance:
 
-![image-20251011183204665](.\picture\image-20251011183204665.png)
+![image-20251011183204665](picture/image-20251011183204665.png)
 
 two metrics to evaluate the quality of ensemble forecasts:
 
-![image-20251011183233517](.\picture\image-20251011183233517.png)
+![image-20251011183233517](picture/image-20251011183233517.png)
 
-![image-20251011183300020](.\picture\image-20251011183300020.png)  
+![image-20251011183300020](picture/image-20251011183300020.png)  
 
 #### other info
 
-#### ![image-20251011193545605](.\picture\image-20251011193545605.png)
+#### ![image-20251011193545605](picture/image-20251011193545605.png)
 
 #### FUXI need to do（solve?）
 
@@ -122,7 +122,7 @@ Another challenge lies in the **high computational cost** of widely adopted DA m
 
 **observation data**: Fengyun-4B satellite. 
 
-![image-20251019150446209](.\picture\image-20251019150446209.png)
+![image-20251019150446209](picture/image-20251019150446209.png)
 
 Additionally, considering that satellite observation biases usually vary with scan angle and geographic location52,54,55, the longitude, latitude, satellite zenith angle, and observation time of each observation are encoded as additional channels. 
 
@@ -130,19 +130,19 @@ Finally, the observation input consists of a total of 15 channels, including 8 b
 
 #### method
 
-![image-20251016184946630](.\picture\image-20251016184946630.png)
+![image-20251016184946630](picture/image-20251016184946630.png)
 
 
 
 **model**: 
 
-![image-20251019153809243](.\picture\image-20251019153809243.png) 
+![image-20251019153809243](picture/image-20251019153809243.png) 
 
 why crop?  风云4B只能观测到这么大的范围
 
 **Loss function**:
 
-![image-20251019154942084](.\picture\image-20251019154942084.png)
+![image-20251019154942084](picture/image-20251019154942084.png)
 
 
 
@@ -150,13 +150,13 @@ why crop?  风云4B只能观测到这么大的范围
 
 **Evaluation method**:
 
-![image-20251019142617085](.\picture\image-20251019142617085.png)
+![image-20251019142617085](picture/image-20251019142617085.png)
 
 
 
 **assimilation performance**: To evaluate assimilation performance, three experimental configurations were designed: EXP_ASSI, EXP_CORR, and EXP_CTRL.
 
-![image-20251016175949398](.\picture\image-20251016175949398.png)
+![image-20251016175949398](picture/image-20251016175949398.png)
 
 
 
